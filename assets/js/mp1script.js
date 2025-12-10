@@ -1,10 +1,28 @@
-function replaceAll() {
-    let str1 = document.getElementById("txtInput").value;
-    console.log(str1);
-    // Logic to replace all occurrences of ' ' (space) with '' (no space) 
+function searchWord(){
+    let sentence = document.getElementById("txtSentence").value;
+    let word = "JavaScript is easy easy";
 
-    let newStr = str1.replaceAll(' ','');
-    document.getElementById("txtResult").innerHTML = newStr;
-
+    if (sentence.includes(word) && sentence.trim() === word) {
+        document.getElementById("txtSearchResult").innerHTML = `"${word}" found in the sentence.`;
+    } else {
+        document.getElementById("txtSearchResult").innerHTML = `"${word}" not found in the sentence.`;
+    }
 }
+
+function countCharacters() {
+    let txt = document.getElementById("txtChar").value;
+    let trimmedSentence = txt.replace(/\s+/g, ' ').trim();
+    let charCount = trimmedSentence.length;
+    document.getElementById("txtCharResult").innerHTML = charCount;
+}
+
+
+
+
+
+
+
+
+
+
 
