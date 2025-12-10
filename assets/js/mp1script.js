@@ -1,3 +1,4 @@
+// Problem 2
 function searchWord(){
     let sentence = document.getElementById("txtSentence").value;
     let word = "JavaScript is easy easy";
@@ -9,6 +10,7 @@ function searchWord(){
     }
 }
 
+// Problem 4
 function countCharacters() {
     let txt = document.getElementById("txtChar").value;
     let trimmedSentence = txt.replace(/\s+/g, ' ').trim();
@@ -16,6 +18,10 @@ function countCharacters() {
     document.getElementById("txtCharResult").innerHTML = charCount;
 }
 
+/*
+Author: Micaela Ganas
+Description: This is a demo JS file for Part2A by Micaela Ysabel Ganas.
+*/
 
 
 
